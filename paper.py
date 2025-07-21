@@ -34,7 +34,7 @@ while running:
   elif choices == "sissors" and computer == "paper":
     print(f"{palyer} won")
   else:
-    print("you lose to the computer")
+    print("you lost to the computer")
 
   pl = input("play again n/y ")
   if pl.lower() =="y":
