@@ -1,9 +1,9 @@
 import random
 
-options = ("rock", "paper", "sissors")
+options = ("rock", "paper", "scissors")
 running = True
 
-print("welcome to paper rock sissors game")
+print("welcome to paper rock scissors game")
 
 palyer = input("enter a username ")
 while palyer == "" or palyer == " ":
@@ -17,7 +17,7 @@ while running:
   computer = random.choice(options)
 
   while choices not in options:
-    choices = input("choose rock or paper or sissors ")
+    choices = input("choose rock or paper or scissors ")
     if choices not in options:
       print(f"{choices} is not in the game")
     else:
@@ -29,9 +29,9 @@ while running:
     print("draw")
   elif choices == "paper" and computer == "rock":
     print(f"{palyer} won")
-  elif choices == "rock" and computer == "sissors":
+  elif choices == "rock" and computer == "scissors":
     print(f"{palyer} won")
-  elif choices == "sissors" and computer == "paper":
+  elif choices == "scissors" and computer == "paper":
     print(f"{palyer} won")
   else:
     print("you lost to the computer")
